@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Egodiva-Marketing</title>
+  <!-- <link rel="icon" sizes="192x192" href="./assets/img/pc/android-chrome-512x512.png"> -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Noto+Sans+JP:wght@300;700;900&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      function fadeAnimation() {
+        $('.fadein').each(function () {
+          var bottom_element = $(this).offset().top + ($(window).height() / 4);
+          var bottom_window = $(window).scrollTop() + $(window).height();
+
+          if (bottom_window >= bottom_element) {
+            $(this).addClass('fade_on');
+          }
+        })
+      }
+      $(window).scroll(function () {
+        fadeAnimation();
+      });
+
+      // $(window).on('load', function () {
+      //   fadeAnimation();
+      // })
+      fadeAnimation();
+      // $('p-top__block').addClass('fade_on');
+
+      // ------------------------------------------for modal animation------------------------------------------------------
+      $("#myBtn").click(function () {
+        $(".modal").fadeIn(300);
+      });
+
+      $(".close").click(function () {
+        $(".modal").fadeOut(300);
+      })
+
+      $(".modal").click(function () {
+        if (!$(event.target).closest(".modal-content").length) {
+          $(".modal").fadeOut(300);
+        }
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <div class="l-wrapper" id="wrapper">
+    <header class="c-header" id="top">
+      <div class="c-header__block">
+        <div class="c-header__logo">
+          <img src="./assets/img/pc/BOTHA_LOGO_FIX_b.png" alt="">
+        </div>
+      </div>
+    </header>
+
+    <main class="l-main">
+
+      <!-- --------------------------------------------0.top--------------------------------------------- -->
+      <div class="p-top">
+        <div class="p-top__block fadein ">
+
+          <div class="p-top__img--pc">
+            <img src="./assets/img/pc/coverwithoutcharacter.png" alt="">
+            <div class="p-top__img--pc--cat ani2 fadein">
+              <img src="./assets/img/pc/cat.png" alt="">
+            </div>
+            <div class="p-top__img--pc--other ani1 fadein">
+              <img src="./assets/img/pc/not_cat.png" alt="">
+            </div>
+          </div>
+
+          <div class="p-top__img--sp">
+            <img src="./assets/img/sp/cover_sp.png" alt="">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- --------------------------------------------1.apply section---------------------------------- -->
+      <div class="c-section fadein" id="apply">
+
+        <div class="c-section__main c-bkg-gradient">
+          <div class="c-section__head">
+            <div class="c-section__title">
+              <div class="c-section__title--small">OFFICIAL CHARACTOR</div>
+              <div class="c-section__title--main"><img src="./assets/img/pc/apply-section-title.png" alt="">
+                <!-- <div class="c-section__title--bigblack--line"></div> -->
+              </div>
+              <div class="c-section__title--main--sp"><img src="./assets/img/sp/apply section title sp.png" alt="">
+                <!-- <div class="c-section__title--bigblack--line"></div> -->
+              </div>
+              <div class="c-section__title--des">
+                テキストあとでかんがえるテキストあとでかんがえるテキストあとでかんがえるテキストあとでかんがえるテキストあとでかんがえるテキストあとでかんがえるテキストあとでかんがえるテキストあとでかんがえる</div>
+            </div>
+          </div>
+          <div class="c-sectoin__body">
+            <div class="p-apply">
+              <div class="p-apply__block">
+                <div class="p-apply__btn">
+                  <a class="c-btn" href="" onclick="return false;">
+                    <div class="c-btn__inner">
+                      <div class="c-btn__text">さっそく応募する</div>
+                      <div class="c-btn__icon">
+                        <div class="c-btn__icon--pink"><img src="./assets/img/pc/button arrow.png" alt=""></div>
+                        <div class="c-btn__icon--white"><img src="./assets/img/pc/button arrow white.png" alt=""></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------2.merit section---------------------------------- -->
+      <div class="c-section fadein c-section__merit" id="merit">
+
+        <div class="c-section__main c-bkg-grid">
+          <div class="c-section__head">
+            <div class="c-section__title">
+              <div class="c-section__title--small--black">ADVANTAGE</div>
+              <div class="c-section__title--main"><img src="./assets/img/pc/merit-section-title.png" alt=""></div>
+              <div class="c-section__title--main--sp"><img src="./assets/img/sp/merit section title sp.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="c-sectoin__body">
+            <div class="p-merit">
+              <div class="p-merit__block">
+                <div class="p-merit__bg1"><img src="./assets/img/pc/bg_01.png" alt=""></div>
+                <div class="p-merit__bg2"><img src="./assets/img/pc/bg_02.png" alt=""></div>
+                <div class="p-merit__bg3"><img src="./assets/img/pc/bg_03.png" alt=""></div>
+                <div class="p-merit__bg4"><img src="./assets/img/pc/bg_04.png" alt=""></div>
+                <!------------------------- box1 ----------------->
+                <div class="p-merit__box">
+                  <div class="p-merit__box--img"><img src="./assets/img/pc/features_01.png" alt=""></div>
+                  <div class="p-merit__box--body">
+
+                    <div class="p-merit__box--body--title1">
+                      <div class="p-merit__box--body--title1--pc"><img src="./assets/img/pc/text1.png" alt=""></div>
+                      <div class="p-merit__box--body--title1--sp"><img src="./assets/img/sp/text1 sp.png" alt=""></div>
+                      <div class="p-merit__box--body--title1--circle">
+                        <img src="./assets/img/pc/circle.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="p-merit__box--body--des">
+                      クリエイター歴、販売実績などの経験は一切不問！ <br>
+                      はじめての作品であっても応募可能です。 <br>
+                      BOTHAは経験に関わらず、どなたにもチャンスが平等にある<br>
+                      クリエイターコミュニティを目指しています。
+                    </div>
+                  </div>
+                </div>
+                <!------------------------- box2 ----------------->
+                <div class="p-merit__box--reverse">
+                  <div class="p-merit__box--img"><img src="./assets/img/pc/features_02.png" alt=""></div>
+                  <div class="p-merit__box--body">
+                    <div class="p-merit__box--body--title2">
+                      <div class="p-merit__box--body--title2--pc"><img src="./assets/img/pc/text2.png" alt=""></div>
+                      <div class="p-merit__box--body--title2--sp"><img src="./assets/img/sp/text2 sp.png" alt=""></div>
+                      <div class="p-merit__box--body--title2--2lines">
+                        <img src="./assets/img/pc/2lines.png" alt="">
+                      </div>
+                    </div>
+                    <div class="p-merit__box--body--subdes">副賞5万円(2名) / 特別賞1万円(5名)</div>
+                    <div class="p-merit__box--body--des">
+                      見事公式キャラクターとして選ばれた最優秀賞には賞金30万円を贈呈いたします。また、最終選考に残った他7名のクリエイターさまにも投票数に応じて副賞5万円(2名)、特別賞1万円(5名)を贈呈します。
+                    </div>
+                  </div>
+                </div>
+                <!------------------------- box3 ----------------->
+                <div class="p-merit__box">
+                  <div class="p-merit__box--img"><img src="./assets/img/pc/features_03.png" alt=""></div>
+                  <div class="p-merit__box--body">
+                    <div class="p-merit__box--body--title3">
+                      <div class="p-merit__box--body--title3--pc"><img src="./assets/img/pc/text3.png" alt=""></div>
+                      <div class="p-merit__box--body--title3--sp"><img src="./assets/img/sp/text3 sp.png" alt=""></div>
+                      <div class="p-merit__box--body--title3--1line">
+                        <img src="./assets/img/pc/1line.png" alt="">
+                      </div>
+                    </div>
+                    <div class="p-merit__box--body--des">
+                      公式キャラクターに起用されたあと、BOTHAサイト内での各所での登場はもちろん、BOTHAキャンペーンプロモーション時の広告配信用クリエイティブとしても活用されます。</div>
+                  </div>
+                </div>
+                <!------------------------- box4 ----------------->
+                <div class="p-merit__box--reverse">
+                  <div class="p-merit__box--img"><img src="./assets/img/pc/features_04.png" alt=""></div>
+                  <div class="p-merit__box--body">
+                    <div class="p-merit__box--body--title4">
+                      <div class="p-merit__box--body--title4--pc"><img src="./assets/img/pc/text4.png" alt=""></div>
+                      <div class="p-merit__box--body--title4--sp"><img src="./assets/img/sp/text4 sp.png" alt=""></div>
+                      <div class="p-merit__box--body--title4--wave">
+                        <img src="./assets/img/pc/wave.png" alt="">
+                      </div>
+                      <div class="p-merit__box--body--title4--wavesp">
+                        <img src="./assets/img/sp/wave-sp.png" alt="">
+                      </div>
+                    </div>
+                    <div class="p-merit__box--body--des">
+                      テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+                  </div>
+                </div>
+                <!------------------------- box5 ----------------->
+                <div class="p-merit__box5">
+                  <div class="p-merit__box5--img5"><img src="./assets/img/pc/features_PC_05.png" alt=""></div>
+                  <div class="p-merit__box5--img5--sp"><img src="./assets/img/sp/features_05.png" alt=""></div>
+
+                  <div class="p-merit__box5--body">
+                    <div class="p-merit__box5--body--title5">
+                      <div class="p-merit__box5--body--title5--pc"><img src="./assets/img/pc/text5.png" alt=""></div>
+                      <div class="p-merit__box5--body--title5--sp"><img src="./assets/img/sp/text5 sp.png" alt="">
+                      </div>
+                      <div class="p-merit__box5--body--title5--wave2">
+                        <img src="./assets/img/pc/wave2.png" alt="">
+                      </div>
+                      <div class="p-merit__box5--body--title5--wave2sp">
+                        <img src="./assets/img/sp/wave2-sp.png" alt="">
+                      </div>
+                    </div>
+                    <div class="p-merit__box5--body--des">
+                      テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+                  </div>
+                </div>
+
+                <div class="p-merit__btn">
+                  <a class="c-btn" href="" onclick="return false;">
+                    <div class="c-btn__inner">
+                      <div class="c-btn__text">さっそく応募する</div>
+                      <div class="c-btn__icon">
+                        <div class="c-btn__icon--pink"><img src="./assets/img/pc/button arrow.png" alt=""></div>
+                        <div class="c-btn__icon--white"><img src="./assets/img/pc/button arrow white.png" alt=""></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------3.info section---------------------------------- -->
+      <div class="c-section fadein" id="info">
+
+        <div class="c-section__main c-bkg-gradient">
+          <div class="c-section__head">
+            <div class="c-section__title">
+              <div class="c-section__title--small--black">Requirement</div>
+              <div class="c-section__title--main"><img src="./assets/img/pc/info-section-title.png" alt=""></div>
+              <div class="c-section__title--main--sp"><img src="./assets/img/pc/info-section-title.png" alt=""></div>
+
+            </div>
+          </div>
+          <div class="c-sectoin__body">
+            <div class="p-info">
+              <div class="p-info__block">
+                <!-- 1 -->
+                <div class="p-info__para">
+                  <div class="p-info__para--title">
+                    <img src="./assets/img/pc/icon_.png" alt="">
+                    <div>応募資格</div>
+                  </div>
+                  <div class="p-info__para--des">
+                    ・経験不問、どなたでも参加できます
+                  </div>
+                </div>
+                <div class="p-info__para--line"></div>
+
+                <!-- 2 -->
+                <div class="p-info__para">
+                  <div class="p-info__para--title">
+                    <img src="./assets/img/pc/icon_.png" alt="">
+                    <div>提出物</div>
+                  </div>
+                  <div class="p-info__para--des">
+                    ・サイズ：自由<br>
+                    ・容量：3MB以下<br>
+                    ・形式：jpg,png（RGB）<br>
+                    ※入選の場合のみPSD/AIなどのオリジナルデータのご提出をお願い致します
+                  </div>
+                </div>
+                <div class="p-info__para--line"></div>
+
+                <!-- 3 -->
+                <div class="p-info__para">
+                  <div class="p-info__para--title">
+                    <img src="./assets/img/pc/icon_.png" alt="">
+                    <div>キャラクターについて</div>
+                  </div>
+                  <div class="p-info__para--des">
+                    ・二次元キャラクターのみ <br>
+                    ・未発表でオリジナル制作のもの（二次創作や既存作品の類似作品は不可）<br>
+                    ・二頭身以上あるもの <br>・手足に動きをつけられる想定にあるもの <br>
+                    ・成人向けでないもの
+                  </div>
+                </div>
+                <div class="p-info__para--line"></div>
+
+                <!-- 4 -->
+                <div class="p-info__para p-info__para--pop">
+                  <div class="p-info__para--title">
+                    <img src="./assets/img/pc/icon_.png" alt="">
+                    <div>諸権利</div>
+                  </div>
+                  <div class="p-info__para--des">
+                    テキストが入ります。重要な部分を6行くらいで記載し、「全文を読む」というボタンでポップアップになります。テキストが入ります。重要な部分を6行くらいで記載し、「全文を読む」というボタンでポップアップになります。テキストが入ります。重要な部分を6行くらいで記載し、「全文を読む」というボタンでポップアップになります。テキストが入ります。重要な部分を6行くらいで記載し、「全文を読む」というボタンでポップアップになります...
+                  </div>
+                  <div class="p-info__para--des--pop" id="myBtn">
+                    <div class="p-info__para--des--pop--title">全文を読む</div>
+                    <img src="./assets/img/pc/down arrow.png" alt="">
+                    <div class="p-info__para--des--pop--des"></div>
+                  </div>
+
+                </div>
+                <div class="p-info__para--line"></div>
+
+                <!-- 5 -->
+                <div class="p-info__para">
+                  <div class="p-info__para--title">
+                    <img src="./assets/img/pc/icon_.png" alt="">
+                    <div>留意事項</div>
+                  </div>
+                  <div class="p-info__para--des">
+                    応募作品が、既発表のデザインと同一または極度に類似している場合、または第三者の知的財産権等の侵害となる場合（応募後に侵害となった場合を含む）、本募集要項に反している場合は、受賞結果の発表後であっても受賞を取り消すことがあります。また既に賞金を授与した後に当該事実が判明した場合は、賞金を返還していただきます。<br>
+                    ※上記既存サイトコピペのためリライトする※
+                  </div>
+                </div>
+
+
+                <div class="p-info__btn">
+                  <a class="c-btn" href="" onclick="return false;">
+                    <div class="c-btn__inner">
+                      <div class="c-btn__text">さっそく応募する</div>
+                      <div class="c-btn__icon">
+                        <div class="c-btn__icon--pink"><img src="./assets/img/pc/button arrow.png" alt=""></div>
+                        <div class="c-btn__icon--white"><img src="./assets/img/pc/button arrow white.png" alt=""></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------4.date section------------------------------------ -->
+      <div class="c-section fadein" id="date">
+        <div class="c-section__main c-bkg-grid">
+          <div class="c-section__head">
+            <div class="c-section__title">
+              <div class="c-section__title">
+                <div class="c-section__title--small--black">PROCESS</div>
+                <div class="c-section__title--main"><img src="./assets/img/pc/date-section-title.png" alt=""></div>
+                <div class="c-section__title--main--sp"><img src="./assets/img/pc/date-section-title.png" alt=""></div>
+
+              </div>
+            </div>
+          </div>
+          <div class="c-sectoin__body">
+            <div class="p-date">
+              <div class="p-date__block">
+                <!-- 1 -->
+                <div class="p-date__box p-date__box1">
+                  <div class="p-date__box--img"><img src="./assets/img/pc/icon_01.png" alt="">
+                    <div class="p-date__box--imgline"></div>
+                  </div>
+                  <div class="p-date__box--body">
+                    <div class="p-date__box--body--sub">22年9月16日〜 00日</div>
+                    <div class="p-date__box--body--title">応募期間<span>(4週間)</span></div>
+                    <div class="p-date__box--body--des">BOTHAへ新規登録の上、サイトTOPに表示されているバナーより応募ください。</div>
+                    <div class="p-date__box--body--img">
+                      <img src="./assets/img/pc/process-img.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="p-date__box p-date__box2">
+                  <div class="p-date__box--img"><img src="./assets/img/pc/icon_02.png" alt="">
+                    <div class="p-date__box--imgline"></div>
+                  </div>
+                  <div class="p-date__box--body">
+                    <div class="p-date__box--body--sub">22年00月00日〜00日</div>
+                    <div class="p-date__box--body--title">一次審査<span>(2週間)</span></div>
+                    <div class="p-date__box--body--des">応募要件に基づき、BOTHA運営チームにて応募いただいた作品から８点の最終選考作品を選出いたします。</div>
+                  </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="p-date__box p-date__box3">
+                  <div class="p-date__box--img"><img src="./assets/img/pc/icon_03.png" alt="">
+                    <div class="p-date__box--imgline"></div>
+                  </div>
+                  <div class="p-date__box--body">
+                    <div class="p-date__box--body--sub">22年00月00日〜00日</div>
+                    <div class="p-date__box--body--title">ファン投票最終選考<span>(2週間)</span></div>
+                    <div class="p-date__box--body--des">最終選考に選ばれた8作品は2週間のファン投票によって最優秀賞を決定いたします。<br>
+                      応募期間中は同じユーザーでも毎日1回ずつ投票が可能ですので、ぜひご自身のプロモーションとしてもご活用ください。</div>
+                  </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="p-date__box p-date__box4">
+                  <div class="p-date__box--img"><img src="./assets/img/pc/icon_04.png" alt=""></div>
+                  <div class="p-date__box--body">
+                    <div class="p-date__box--body--sub">22年00月00日〜00日</div>
+                    <div class="p-date__box--body--title">結果発表!</div>
+                    <div class="p-date__box--body--des">BOTHAサイト内、公式Twitterにて最終選考の結果を発表いたします。</div>
+                  </div>
+                </div>
+
+                <div class="p-date__btn--color">
+                  <a class="c-btn" href="" onclick="return false;">
+                    <div class="c-btn__inner--color">
+                      <div class="c-btn__text2">このページをブックマークする</div>
+                      <div class="c-btn__icon">
+                        <div class="c-btn__icon--pink"><img src="./assets/img/pc/bookmark.png" alt=""></div>
+                        <div class="c-btn__icon--white"><img src="./assets/img/pc/bookmark color.png" alt=""></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="p-date__btn">
+                  <a class="c-btn" href="" onclick="return false;">
+                    <div class="c-btn__inner">
+                      <div class="c-btn__text">さっそく応募する</div>
+                      <div class="c-btn__icon">
+                        <div class="c-btn__icon--pink"><img src="./assets/img/pc/button arrow.png" alt=""></div>
+                        <div class="c-btn__icon--white"><img src="./assets/img/pc/button arrow white.png" alt=""></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------social media-------------------------------------------- -->
+      <div class="p-social fadein">
+        <div class="p-social__block">
+          <div class="p-social__title">＼コンペをみんなに知らせる／</div>
+          <ul class="p-social__list">
+            <li class="p-social__list--item"><img src="./assets/img/pc/image 47.png" alt=""></li>
+            <li class="p-social__list--item"><img src="./assets/img/pc/image 48.png" alt=""></li>
+            <li class="p-social__list--item"><img src="./assets/img/pc/image 49.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- ---------------------------------------------modal------------------------------------------------------------ -->
+    <!-- <div class="grayout"> -->
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-content-title">応募キャラクターについて</div>
+        <div class="modal-content-text">応募作品は、以下の条件を満たすものに限るものとします。<br>
+          ・二次元のキャラクター<br>
+          ・二頭身以上のキャラクター<br>
+          ・手足等のポーズを変更できるキャラクター<br>
+          ・応募者自身が作成したもので未発表の作品であること（二次創作作品や既存作品の類似作品は禁止します）<br>
+          ・人種差別、性差別等の差別的表現、わいせつな表現・内容を含むものでないこと</div>
+        <div class="modal-content-title">応募方法・応募条件</div>
+        <div class="modal-content-text">【応募方法】<br>
+          ・本コンペの特設サイトに設置する応募フォームよりエントリーしてください。<br>
+          【応募資格】<br>
+          ・年齢、性別、クリエイター歴（プロアマ等）、BOTHA内の販売実績等の条件を問わずどなたでも参加可能です。<br>
+          【作品仕様】<br>
+          ・縦横比・画像サイズ：自由<br>
+          ・容量：3MB以下<br>
+          ・形式：jpg、png（RGB）<br>
+          ※入選作品については、PSD/AIなどのオリジナルデータのご提出をお願いいたします。なお、当社は受領したオリジナルデータに関する返還・削除等の義務を負わないものとします。</div>
+        <div class="modal-content-title">応募期間</div>
+        <div class="modal-content-text">2022年9月21日（水）～10月20日（木）8:59</div>
+      </div>
+    </div>
+    <!-- </div> -->
+
+  </div>
+  <footer class="c-footer">
+    <div class="c-footer__block">
+      <div class="c-footer__head"><img src="./assets/img/pc/BOTHA_LOGO_FIX_b.png" alt=""></div>
+      <ul class="c-footer__list">
+        <li class="c-footer__list--item"><a href="#">BOTHA</a></li>
+        <li class="c-footer__list--item"><a href="#">応募フォーム</a></li>
+        <li class="c-footer__list--item"><a href="#">運営会社</a></li>
+        <li class="c-footer__list--item"><a href="#">お問合せ</a></li>
+      </ul>
+
+    </div>
+  </footer>
+  </div>
+
+  <!-- <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    // btn.onclick = function () {
+    //   modal.style.display = "block";
+    // }
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script> -->
+</body>
+
+</html>
