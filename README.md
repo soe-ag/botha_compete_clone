@@ -1,6 +1,7 @@
 # botha_compete_clone
 
-coding practice website clone 
+coding practice website clone
+
 scss files are in the zip 
 
 original website
