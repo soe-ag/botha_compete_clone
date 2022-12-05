@@ -2,7 +2,7 @@
 
 coding practice website clone
 
-scss files are in the zip 
+sass files are in the zip 
 
 original website
 https://lp.bo-tha.com/official_character/202209/
